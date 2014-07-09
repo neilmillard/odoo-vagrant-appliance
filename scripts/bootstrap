@@ -1,0 +1,17 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}")" && pwd )"
+
+echo "Changing to base directory"
+cd `dirname $SCRIPT_DIR`
+
+# clean up
+rm -rf ./.bundle
+rm -rf ./bin
+rm -rf ./puppet/modules/*
+rm -rf ./.librarian
+rm -rf ./.tmp
+
+bundle install --path=./.bundle --binstubs=./bin
+
+bundle exec librarian-puppet install --path=./puppet/modules
