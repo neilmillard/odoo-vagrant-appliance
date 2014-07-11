@@ -3,3 +3,4 @@ puppet/modules/
 bin/
 .bundle
 .librarian
+.vagrant/

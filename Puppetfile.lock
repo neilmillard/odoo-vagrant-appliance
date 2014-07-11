@@ -1,18 +1,29 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    puppetlabs/apt (1.5.0)
+    puppetlabs/apt (1.5.1)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.1.0)
       puppetlabs/stdlib (>= 4.0.0)
     puppetlabs/firewall (1.1.2)
-    puppetlabs/postgresql (3.3.3)
+    puppetlabs/postgresql (3.4.0)
       puppetlabs/apt (< 2.0.0, >= 1.1.0)
       puppetlabs/concat (< 2.0.0, >= 1.0.0)
       puppetlabs/firewall (>= 0.0.4)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs/stdlib (4.2.2)
+    puppetlabs/vcsrepo (1.0.2)
+
+GIT
+  remote: git@github.com:localmotors/puppet-odoo.git
+  ref: master
+  sha: 505c087d3c9b232f4873d02780df6aa83e6558ed
+  specs:
+    localmotors/odoo (0.0.1)
+      puppetlabs/postgresql (>= 3.4.0)
 
 DEPENDENCIES
-  puppetlabs/postgresql (= 3.3.3)
+  localmotors/odoo (>= 0)
+  puppetlabs/postgresql (>= 3.4.0)
+  puppetlabs/vcsrepo (= 1.0.2)
 
