@@ -17,7 +17,7 @@ FORGE
 GIT
   remote: git@github.com:localmotors/puppet-odoo.git
   ref: master
-  sha: 505c087d3c9b232f4873d02780df6aa83e6558ed
+  sha: 81992b3b43f80b4c1dc8a089a9a215b9983032b0
   specs:
     localmotors/odoo (0.0.1)
       puppetlabs/postgresql (>= 3.4.0)
