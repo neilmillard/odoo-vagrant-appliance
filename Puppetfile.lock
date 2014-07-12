@@ -15,7 +15,7 @@ FORGE
     puppetlabs/vcsrepo (1.0.2)
 
 GIT
-  remote: git@github.com:localmotors/puppet-odoo.git
+  remote: https://github.com/localmotors/puppet-odoo.git
   ref: master
   sha: f5177690e89a2e97202e28c70a8e0bd410d9ecf9
   specs:
