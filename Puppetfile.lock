@@ -5,23 +5,23 @@ FORGE
       puppetlabs/apt (>= 1.0.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 0.1.6)
-    puppetlabs/apt (1.5.1)
+    puppetlabs/apt (1.5.2)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.1.0)
       puppetlabs/stdlib (>= 4.0.0)
-    puppetlabs/firewall (1.1.2)
-    puppetlabs/postgresql (3.4.0)
+    puppetlabs/firewall (1.1.3)
+    puppetlabs/postgresql (3.4.2)
       puppetlabs/apt (< 2.0.0, >= 1.1.0)
       puppetlabs/concat (< 2.0.0, >= 1.0.0)
       puppetlabs/firewall (>= 0.0.4)
       puppetlabs/stdlib (< 5.0.0, >= 3.2.0)
-    puppetlabs/stdlib (4.2.2)
+    puppetlabs/stdlib (4.3.2)
     puppetlabs/vcsrepo (1.0.2)
 
 GIT
   remote: https://github.com/localmotors/puppet-odoo.git
   ref: master
-  sha: f5177690e89a2e97202e28c70a8e0bd410d9ecf9
+  sha: 4edc13562b640f85da123a28b3c43bc1b30152f2
   specs:
     localmotors/odoo (0.0.1)
       puppetlabs/postgresql (>= 3.4.0)

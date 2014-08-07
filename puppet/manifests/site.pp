@@ -1,5 +1,8 @@
 node default {
-    include odoo::server
+    class {'odoo::globals':
+        version => '8.0',
+    }->
+    class {'odoo::server': }
 
     exec {'apt-update':
         command => "/usr/bin/apt-get update"
@@ -12,7 +15,7 @@ node default {
     nginx::resource::upstream {'odoo_server':
         ensure  => present,
         members => [
-            'localhost:8069',
+            '127.0.0.1:8069',
         ]
     }
 
