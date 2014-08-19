@@ -5,7 +5,7 @@ FORGE
       puppetlabs/apt (>= 1.0.0)
       puppetlabs/concat (>= 1.0.0)
       puppetlabs/stdlib (>= 0.1.6)
-    puppetlabs/apt (1.5.2)
+    puppetlabs/apt (1.6.0)
       puppetlabs/stdlib (>= 2.2.1)
     puppetlabs/concat (1.1.0)
       puppetlabs/stdlib (>= 4.0.0)
@@ -19,9 +19,23 @@ FORGE
     puppetlabs/vcsrepo (1.0.2)
 
 GIT
+  remote: https://github.com/localmotors/puppet-odoo-profiles.git
+  ref: master
+  sha: 351736e51800daf3ea08c37e18b07b13bb4d440b
+  specs:
+    locamotors/profiles (0.0.1)
+
+GIT
+  remote: https://github.com/localmotors/puppet-odoo-roles.git
+  ref: master
+  sha: 487dc2f7a7e31cbb8e8915888e2239a8afc8c2b3
+  specs:
+    locamotors/roles (0.0.1)
+
+GIT
   remote: https://github.com/localmotors/puppet-odoo.git
   ref: master
-  sha: 4edc13562b640f85da123a28b3c43bc1b30152f2
+  sha: a67efa399a19893cec5a4a2825aaf2a79d711ead
   specs:
     localmotors/odoo (0.0.1)
       puppetlabs/postgresql (>= 3.4.0)
@@ -29,6 +43,8 @@ GIT
 DEPENDENCIES
   jfryman/nginx (= 0.0.9)
   localmotors/odoo (>= 0)
+  locamotors/profiles (>= 0)
+  locamotors/roles (>= 0)
   puppetlabs/postgresql (>= 3.4.0)
   puppetlabs/vcsrepo (= 1.0.2)
 

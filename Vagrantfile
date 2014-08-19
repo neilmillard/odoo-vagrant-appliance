@@ -14,5 +14,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     puppet.module_path = "puppet/modules"
     puppet.manifests_path = "puppet/manifests"
     puppet.manifest_file  = "site.pp"
+    puppet.hiera_config_path = "puppet/conf/hiera.yaml"
+    puppet.working_directory = "/tmp/vagrant-puppet-3"
   end
 end
