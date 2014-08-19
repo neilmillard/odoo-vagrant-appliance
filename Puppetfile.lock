@@ -28,7 +28,7 @@ GIT
 GIT
   remote: https://github.com/localmotors/puppet-odoo-roles.git
   ref: master
-  sha: 154f835eb2fe09a01a2759e2daf07c3a7dd58530
+  sha: eb00425a55b3674caf6eae8963c2772f77d2e509
   specs:
     locamotors/roles (0.0.1)
 
