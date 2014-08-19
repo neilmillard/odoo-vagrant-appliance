@@ -21,7 +21,7 @@ FORGE
 GIT
   remote: https://github.com/localmotors/puppet-odoo-profiles.git
   ref: master
-  sha: 72dc2b5ba51de316884aeaa5339545aa3e6e2788
+  sha: d2b411bca956c55572d47bd60b0dc93efaf75a06
   specs:
     locamotors/profiles (0.0.1)
 
