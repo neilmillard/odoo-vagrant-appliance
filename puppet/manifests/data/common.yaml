@@ -2,10 +2,10 @@ roles::nginx::proxy::members:
     - '127.0.0.1:8069'
 roles::nginx::proxy::vhost: 'erp.localhost.com'
 roles::nginx::proxy::upstream: 'odoo_server'
-roles::db::postgresql::version: '9.3'
-roles::db::postgresql::datadir: '/var/lib/postgresql/9.3/main/'
-roles::db::postgresql::listen_addresses: '*'
-roles::db::postgresql::ipv4acls:
+roles::db::postgresql::server::version: '9.3'
+roles::db::postgresql::server::datadir: '/var/lib/postgresql/9.3/main/'
+roles::db::postgresql::server::listen_addresses: '*'
+roles::db::postgresql::server::ipv4acls:
     - 'hostssl odoo openerp 0.0.0.0/24 md5'
 roles::odoo::db::server::database_user: 'openerp'
 roles::odoo::db::server::database_password: 'password'
