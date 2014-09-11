@@ -10,4 +10,4 @@ mod "localmotors/odoo",
 mod "locamotors/roles",
     :git => "https://github.com/localmotors/puppet-odoo-roles.git"
 mod "locamotors/profiles",
-    :git => "https://github.com/localmotors/puppet-odoo-profiles.git
+    :git => "https://github.com/localmotors/puppet-odoo-profiles.git"
