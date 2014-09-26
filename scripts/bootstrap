@@ -12,6 +12,13 @@ rm -rf ./puppet/modules/*
 rm -rf ./.librarian
 rm -rf ./.tmp
 
+if [ `uname -s` == "Linux" ]; then
+  if [ -x /usr/bin/apt-get ];
+    apt-get update -qq
+    apt-get install -y ruby ruby-dev build-essential git
+  fi
+fi
+
 bundle install --path=./.bundle --binstubs=./bin
 
 bundle exec librarian-puppet install --path=./puppet/modules
